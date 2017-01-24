@@ -6,13 +6,13 @@ os    = require "os"
 path  = require "path"
 home  = os.homedir()
 Multispinner = require "multispinner"
-tempalte_git_dir = ".sushi-tool/template-git"
-template_git_pwd = path.resolve(path.join(home, tempalte_git_dir))
+template_git_dir = ".sushi-tool/template-git"
+template_git_pwd = path.resolve(path.join(home, template_git_dir))
 template_dir = ".sushi-tool/template"
 template_pwd = path.resolve(path.join(home, template_dir))
 prettyjson = require 'prettyjson'
 
-gitRepository = "https://github.com/CoderDojo/sushi-gen"
+gitRepository = "https://github.com/netdream/sushi-gen"
 
 downloadDependencies = (callback) ->
   # Execute bower
