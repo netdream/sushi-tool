@@ -85,7 +85,7 @@ $ chopsticks sync
 To use the pdf generation you need to have installed ```phantomjs```, install it using ```npm```:
 
 ```bash
-$ sudo npm install -g phantomjs
+$ sudo npm install -g phantomjs-prebuilt
 ```
 
 To merge your pdf filesthe ```pdfunite``` command line tool, which uses the `poppler` library.
