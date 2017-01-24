@@ -1,6 +1,6 @@
 i18n = require 'i18n'
 i18n.configure
-  locales: ['en', 'es']
+  locales: ['en', 'es', 'it']
   directory: __dirname + '/../../i18n'
   register: global
   objectNotation: true

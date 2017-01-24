@@ -1,0 +1,58 @@
+{
+	"commands": {
+		"chdir": "Cambia la directory di lavoro",
+		"edit": "Modifica la configurazione della serie Sushi corrente",
+		"init": "Prepara la cartella corrente per generare una serie Sushi",
+		"live": "Inizia il modo live: vedi i cambiamenti al tuo Markdown in diretta nel tuo browser",
+		"new": "Aggiungi una nuova Sushi card a questa serie",
+		"merge": "Unisci i pdf generati in uno unico (richiede lo strumento PDFunite)",
+		"pdf": "Genera le Sushi Cards nella cartella di output specificata",
+		"scan": "Controlla se ci sono file esistenti nella cartella",
+		"sync": "Aggiorna i dettagli delle serie Sushi dai files Markdown esistenti",
+		"liveoption": {
+			"nolivereload": "Il modo 'livereload' non è attivo",
+			"nobrowser": "Evita di lanciare il browser con la prima pagina",
+			"notoolbar": "La toolbar dei chopsticks non viene inizializzata"
+		}
+	},
+	"sushi": {
+		"difficulty": {
+			"beginner": "Principiante",
+			"intermediate": "Intermedio",
+			"advanced": "Avanzato"
+		}
+	},
+	"messages": {
+		"conf_updated": "Dettagli aggiornati!",
+		"current_directory": "La directory di lavoro corrente è %s",
+		"dont_use_init": "C'è già un progetto esistente, usa %s per sincronizzare il tuo progetto",
+		"no_config": "Non c'è una configurazione delle serie in questa cartella, ma c'è un file %s",
+		"no_config_exec_init": "Non c'è una configurazione delle serie, esegui prima il comando init",
+		"no_config_data_exec_scan": "Non c'è una configurazione delle serie, ma c'è un file _data.json, esegui il comando scan"
+	},
+	"newSushi": {
+		"series_title": "Qual'è il nome dalla tua serie Sushi?",
+		"subject": "Qual'è il soggetto? (es. HTML, Game Design)",
+		"difficulty": "Indica la difficoltà della tua serie:",
+		"cards": {
+			"title": "Titolo della Sushi Card:",
+			"filename": "Nome file (senza estensione .md):"
+		},
+		"n_cards": "Quante cards includerai nel set?",
+		"description": "Scrivi una breve descrizione della tua serie Sushi:",
+		"author": "Chi dovrebbe apparire com autore della serie (es. CoderDojo Foundation o Diego):",
+		"website": "Sito web dell'Autore:",
+		"twitter": "Twitter dell'Autore:"
+	},
+	"data": {
+		"exists": "Il file di configurazione della serie esiste già",
+		"overwrite": "Vuoi sovrascrivere il file di configurazione della serie?",
+		"loadConfiguration": "Vuoi caricare la configurazione della serie dal file _data.json esistente?"
+	},
+	"pdf": {
+		"bower_dependencies": "Sto scaricando le dipendenze del generatore di Sushi Card",
+		"download_template": "Sto scaricando il generatore di Sushi Card dal repository GitHub",
+		"merge_tool": "Per usare l'opzione %s devi aver installato %s (poppler — https://poppler.freedesktop.org/)",
+		"render_tool": "Per generare i pdf devi aver installato %s (http://phantomjs.org/)"
+	}
+}
