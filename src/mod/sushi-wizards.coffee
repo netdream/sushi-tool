@@ -25,6 +25,13 @@ module.exports =
           default: ->
             sushiSet.subject ? 'python'
         ,
+          type: 'input'
+          name: 'theme'
+          message: __('newSushi.theme')
+          when: -> !askOnlyIfMissing || !sushiSet.theme?
+          default: ->
+            sushiSet.theme ? 'python'
+        ,
           type: 'list'
           name: 'difficulty'
           message: __('newSushi.difficulty')
@@ -64,6 +71,7 @@ module.exports =
       sushiSet.series_title = answers.series_title ? sushiSet.series_title
       sushiSet.description = answers.description ? sushiSet.description
       sushiSet.subject = answers.subject ? sushiSet.subject
+      sushiSet.theme = answers.theme ? sushiSet.theme
       sushiSet.difficulty = answers.difficulty ? sushiSet.difficulty
       sushiSet.author = answers.author ? sushiSet.author
       sushiSet.website = answers.website ? sushiSet.website
@@ -85,6 +93,12 @@ module.exports =
           type: 'input'
           name: 'subject'
           message: __('newSushi.subject')
+          default: ->
+            'python'
+        ,
+          type: 'input'
+          name: 'theme'
+          message: __('newSushi.theme')
           default: ->
             'python'
         ,

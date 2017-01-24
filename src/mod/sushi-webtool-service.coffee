@@ -8,6 +8,7 @@ module.exports = (sushiSet) ->
       series_title: sushiSet.series_title
       description: sushiSet.description
       subject: sushiSet.subject
+      theme: sushiSet.theme
       author: sushiSet.author
       website: sushiSet.website
       twitter: sushiSet.twitter
@@ -16,6 +17,7 @@ module.exports = (sushiSet) ->
     sushiSet.series_title = req.body.series_title || sushiSet.series_title
     sushiSet.description = req.body.description || sushiSet.description
     sushiSet.subject = req.body.subject || sushiSet.subject
+    sushiSet.theme = req.body.theme || sushiSet.theme
     sushiSet.author = req.body.author || sushiSet.author
     sushiSet.website = req.body.website || sushiSet.website
     sushiSet.twitter = req.body.twitter || sushiSet.twitter

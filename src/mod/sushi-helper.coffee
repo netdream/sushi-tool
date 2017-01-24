@@ -9,6 +9,7 @@ class SushiSet
   SET_TITLE = "series_title"
   DESCRIPTION = "description"
   SUBJECT = "subject"
+  THEME = "theme"
   LANGUAGE = "language"
   DIFFICULTY = "difficulty"
   CARDS = "cards"
@@ -24,6 +25,8 @@ class SushiSet
       @language = json_object[LANGUAGE]
     if json_object?.hasOwnProperty(SUBJECT)
       @subject = json_object[SUBJECT]
+    if json_object?.hasOwnProperty(THEME)
+      @theme = json_object[THEME]
     if json_object?.hasOwnProperty(DESCRIPTION)
       @description = json_object[DESCRIPTION]
     if json_object?.hasOwnProperty(AUTHOR)
@@ -78,6 +81,7 @@ class SushiSet
       js_sushicard = configuration[key]
       @series_title = js_sushicard.series_title
       @subject = js_sushicard.language
+      @theme = js_sushicard.theme
 
       card = new SushiCard()
       card.title = js_sushicard.title
@@ -102,6 +106,7 @@ class SushiSet
         filename: sushi.filename
         language: @subject
         subject: @subject
+        theme: @theme
         level: sushi.level
         card_number: sushi.card_number
         series_total_cards: @cards.length
@@ -179,6 +184,7 @@ module.exports =
         sushi.series_title = data.series_title
         sushi.description = data.description
         sushi.subject = data.subject
+        sushi.theme = data.theme
         sushi.difficulty = data.difficulty ? data.difficulty
         sushi.author = data.author ? data.author
         sushi.website = data.website ? data.website

@@ -33,6 +33,7 @@
 	"newSushi": {
 		"series_title": "¿Cuál es el nombre de la serie de Sushi Cards?",
 		"subject": "¿Qué tema vas a enseñar en las tarjetas? (p.e. HTML, Diseño de videojuegos)",
+		"theme": "Which theme do you want to use? (e.g. HTML, Python)",
 		"difficulty": "¿Qué grado de dificultad tienen las tarjetas?",
 		"cards": {
 			"title": "Título de la tarjeta:",

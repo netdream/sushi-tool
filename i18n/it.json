@@ -33,6 +33,7 @@
 	"newSushi": {
 		"series_title": "Qual'è il nome dalla tua serie Sushi?",
 		"subject": "Qual'è il soggetto? (es. HTML, Game Design)",
+		"theme": "Che tema grafico vuoi usare? (e.g. HTML, Python)",
 		"difficulty": "Indica la difficoltà della tua serie:",
 		"cards": {
 			"title": "Titolo della Sushi Card:",

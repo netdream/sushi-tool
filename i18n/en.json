@@ -33,6 +33,7 @@
 	"newSushi": {
 		"series_title": "What is the name of your Sushi series?",
 		"subject": "What subject is your Sushi about? (e.g. HTML, Game Design)",
+		"theme": "Which theme do you want to use? (e.g. HTML, Python)",
 		"difficulty": "Please rate the difficulty of your Sushi series:",
 		"cards": {
 			"title": "Sushi Card title:",
