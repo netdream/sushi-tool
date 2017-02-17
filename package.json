@@ -1,6 +1,6 @@
 {
   "name": "sushi-tool",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Tool to generate CoderDojo sushi templates",
   "main": "lib/sushi-tool.js",
   "scripts": {
@@ -52,7 +52,7 @@
     "minimatch": "^3.0.3",
     "multispinner": "^0.2.1",
     "node-gyp": "^3.5.0",
-    "node-sass": "^4.3.0",
+    "node-sass": "^4.5.0",
     "nodegit": "^0.14.1",
     "nodepdf": "^1.3.0",
     "npmconf": "^2.1.2",
